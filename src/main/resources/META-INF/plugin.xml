@@ -1,0 +1,32 @@
+<idea-plugin>
+    <!--插件全市场唯一标识-->
+    <id>com.lyh.avalon-tools</id>
+
+    <!--插件名称-->
+    <name>Avalon-Tools</name>
+
+    <!--插件作者信息-->
+    <vendor email="liuyanhong@yuanqisenlin.com" url="https://zookeeper.blog.csdn.net/">yqsl</vendor>
+
+    <!--插件描述信息-->
+    <description>
+        这是一个数据仓库插件,目前仅包含JSON格式化等功能
+        将来还会陆续添加更多方便的功能
+    </description>
+
+    <!--插件依赖配置-->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!--插件扩展点配置-->
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <!--自定义组件信息-->
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="DWHTools"
+                    secondary="false"
+                    icon="/ui/banshou.svg"
+                    anchor="right"
+                    factoryClass="com.lyh.avalontools.AvalonToolWindowFactory"/>
+    </extensions>
+</idea-plugin>
